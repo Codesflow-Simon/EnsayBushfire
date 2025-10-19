@@ -1,0 +1,4 @@
+road_name,road_length,road_time,road_speed,road_flowrate,road_risk,node_1,node_2
+great_alpine_rd_north,32.6,22,88.90909091,1304,2,Swifts Creek,Doctors
+omeo_hwy,4,3,80,160,2,Swifts Creek,Omeo
+benambra_rd,16.8,13,77.53846154,672,2,Omeo,Benambra

@@ -1,0 +1,16 @@
+road_name,road_length,road_time,road_speed,road_flowrate,road_risk,node_1,node_2
+great_alpine_rd_south,46.1,37,74.75675676,1844,5,South Bridge,Bruthen
+great_alpine_rd_bruthen_wiseleigh,2.5,2,75,100,2,Bruthen,Wiseleigh
+great_alpine_rd_wiseleigh_bairnsdale,20.1,14,86.14285714,804,3,Wiseleigh,Bairnsdale
+princess_hwy_west,8.3,7,71.14285714,332,2,Bairnsdale,Nicholson
+princess_hwy_centre,11.1,9,74,444,2,Nicholson,Swan Reach
+metung_rd,9.9,9,66,396,2,Metung,Swan Reach
+princess_hwy_east,16.2,16,60.75,648,3,Swan Reach,Lakes Entrance
+princess_hwy_north,1.9,2,57,76,2,Bruthen,Kilmorie Swamp
+princess_hwy_north_east,48.8,34,86.11764706,1952,5,Kilmorie Swamp,Lakes Entrance
+tambo_upper_road_north,6.4,6,64,256,3,Riversdale Farm,Kilmorie Swamp
+tambo_upper_road_south,9.4,8,70.5,376,3,Swan Reach,Riversdale Farm
+stephenson_road_east,2.9,3,58,116,3,Riversdale Farm,Tambo Upper
+stephenson_road_west,7.1,6,71,284,3,Tambo Upper,Nicholson
+swan_reach_road_north,6.9,6,69,276,3,Tambo Upper,Wiseleigh
+swan_reach_road_south,7.3,5,87.6,292,3,Swan Reach,Tambo Upper

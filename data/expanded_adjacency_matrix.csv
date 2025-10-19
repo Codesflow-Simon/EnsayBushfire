@@ -1,0 +1,23 @@
+Location,Doctors,Ensay-Doctors F,Ensay Center,Spring Gulley,Ensay North,North Bridge,Watts Creek,Creek Road,South Bridge,Swifts Creek,Bruthen,Omeo,Benambra,Bairnsdale,Wiseleigh,Nicholson,Tambo Upper,Kilmorie Swamp,Riversdale Farm,Swan Reach,Metung,Lakes Entrance
+Doctors,0,2,1,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Ensay-Doctors F,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ensay Center,1,2,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Spring Gulley,3,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ensay North,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+North Bridge,0,0,2,2,0,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Watts Creek,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Creek Road,0,0,0,0,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0
+South Bridge,0,0,1,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Swifts Creek,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Bruthen,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0
+Omeo,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+Benambra,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Bairnsdale,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+Wiseleigh,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0
+Nicholson,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0
+Tambo Upper,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,0,0
+Kilmorie Swamp,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1
+Riversdale Farm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0
+Swan Reach,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,1,1
+Metung,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Lakes Entrance,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0

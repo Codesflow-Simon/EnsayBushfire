@@ -1,0 +1,12 @@
+road_name,road_length,road_time_minutes,road_speed,road_flowrate,road_risk,node_1,node_2
+little_river_rd_north,3.2,3,64,128,2,Spring Gulley Intersection,Ensay North
+little_river_rd_south,4.1,4,61.5,164,2,Spring Gulley Intersection,North Bridge
+watts_creek_road,8.6,14,36.85714286,344,4,North Bridge,Watts Creek
+reedy_creek_rd,9.3,11,50.72727273,372,2,North Bridge,Creek Road Intersection
+sandy_creek_rd,3.8,5,45.6,152,2,South Bridge,Creek Road Intersection
+horsfall_st,1.3,2,39,52,3,Ensay Centre,North Bridge
+doctors_flat_road_north,9.6,11,52.36363636,384,3,Ensay-Doctors Road,Doctors Flat
+doctors_flat_road_south,6.3,7,54,252,3,Ensay-Doctors Road,Ensay Centre
+great_alpine_road_north_ensay,4.1,3,82,164,2,Doctors Flat,Ensay Centre
+great_alpine_road_south_ensay,12,8,90,480,2,Ensay Centre,South Bridge
+spring_gulley_road,8.6,11,46.90909091,344,2,Doctors Flat,Spring Gulley Intersection
