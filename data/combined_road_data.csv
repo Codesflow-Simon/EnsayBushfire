@@ -1,30 +1,30 @@
 road_name,road_length,road_time_minutes,road_speed,road_flowrate,road_risk,node_1,node_2,region
-little_river_rd_north,3.2,3,64,128,2,Spring Gulley Intersection,Ensay North,Ensay
-little_river_rd_south,4.1,4,61.5,164,2,Spring Gulley Intersection,North Bridge,Ensay
-watts_creek_road,8.6,14,36.85714286,344,4,North Bridge,Watts Creek,Ensay
-reedy_creek_rd,9.3,11,50.72727273,372,2,North Bridge,Creek Road Intersection,Ensay
-sandy_creek_rd,3.8,5,45.6,152,2,South Bridge,Creek Road Intersection,Ensay
-horsfall_st,1.3,2,39,52,3,Ensay Centre,North Bridge,Ensay
-doctors_flat_road_north,9.6,11,52.36363636,384,3,Ensay-Doctors Road,Doctors Flat,Ensay
-doctors_flat_road_south,6.3,7,54,252,3,Ensay-Doctors Road,Ensay Centre,Ensay
-great_alpine_road_north_ensay,4.1,3,82,164,2,Doctors Flat,Ensay Centre,Ensay
-great_alpine_road_south_ensay,12,8,90,480,2,Ensay Centre,South Bridge,Ensay
-spring_gulley_road,8.6,11,46.90909091,344,2,Doctors Flat,Spring Gulley Intersection,Ensay
-great_alpine_rd_north,32.6,22,88.90909091,1304,2,Swifts Creek,Doctors,Alpine
-omeo_hwy,4,3,80,160,2,Swifts Creek,Omeo,Alpine
-benambra_rd,16.8,13,77.53846154,672,2,Omeo,Benambra,Alpine
-great_alpine_rd_south,46.1,37,74.75675676,1844,5,South Bridge,Bruthen,Coastal
-great_alpine_rd_bruthen_wiseleigh,2.5,2,75,100,2,Bruthen,Wiseleigh,Coastal
-great_alpine_rd_wiseleigh_bairnsdale,20.1,14,86.14285714,804,3,Wiseleigh,Bairnsdale,Coastal
-princess_hwy_west,8.3,7,71.14285714,332,2,Bairnsdale,Nicholson,Coastal
-princess_hwy_centre,11.1,9,74,444,2,Nicholson,Swan Reach,Coastal
-metung_rd,9.9,9,66,396,2,Metung,Swan Reach,Coastal
-princess_hwy_east,16.2,16,60.75,648,3,Swan Reach,Lakes Entrance,Coastal
-princess_hwy_north,1.9,2,57,76,2,Bruthen,Kilmorie Swamp,Coastal
-princess_hwy_north_east,48.8,34,86.11764706,1952,5,Kilmorie Swamp,Lakes Entrance,Coastal
-tambo_upper_road_north,6.4,6,64,256,3,Riversdale Farm,Kilmorie Swamp,Coastal
-tambo_upper_road_south,9.4,8,70.5,376,3,Swan Reach,Riversdale Farm,Coastal
-stephenson_road_east,2.9,3,58,116,3,Riversdale Farm,Tambo Upper,Coastal
-stephenson_road_west,7.1,6,71,284,3,Tambo Upper,Nicholson,Coastal
-swan_reach_road_north,6.9,6,69,276,3,Tambo Upper,Wiseleigh,Coastal
-swan_reach_road_south,7.3,5,87.6,292,3,Swan Reach,Tambo Upper,Coastal
+little_river_rd_north,3.2,3,64,1706,2,Spring Gulley Intersection,Ensay North,Ensay
+little_river_rd_south,4.1,4,61.5,1640,2,Spring Gulley Intersection,North Bridge,Ensay
+watts_creek_road,8.6,14,36.85714286,982.8,4,North Bridge,Watts Creek,Ensay
+reedy_creek_rd,9.3,11,50.72727273,1352,2,North Bridge,Creek Road Intersection,Ensay
+sandy_creek_rd,3.8,5,45.6,1216,2,South Bridge,Creek Road Intersection,Ensay
+horsfall_st,1.3,2,39,1040,3,Ensay Centre,North Bridge,Ensay
+doctors_flat_road_north,9.6,11,52.36363636,1396,3,Ensay-Doctors Road,Doctors Flat,Ensay
+doctors_flat_road_south,6.3,7,54,1440,3,Ensay-Doctors Road,Ensay Centre,Ensay
+great_alpine_road_north_ensay,4.1,3,82,2186,2,Doctors Flat,Ensay Centre,Ensay
+great_alpine_road_south_ensay,12,8,90,2400,2,Ensay Centre,South Bridge,Ensay
+spring_gulley_road,8.6,11,46.90909091,1250,2,Doctors Flat,Spring Gulley Intersection,Ensay
+great_alpine_rd_north,32.6,22,88.90909091,2370,2,Swifts Creek,Doctors,Alpine
+omeo_hwy,4,3,80,2133,2,Swifts Creek,Omeo,Alpine
+benambra_rd,16.8,13,77.53846154,2067,2,Omeo,Benambra,Alpine
+great_alpine_rd_south,46.1,37,74.75675676,1993,5,South Bridge,Bruthen,Coastal
+great_alpine_rd_bruthen_wiseleigh,2.5,2,75,2000,2,Bruthen,Wiseleigh,Coastal
+great_alpine_rd_wiseleigh_bairnsdale,20.1,14,86.14285714,2297,3,Wiseleigh,Bairnsdale,Coastal
+princess_hwy_west,8.3,7,71.14285714,1897,2,Bairnsdale,Nicholson,Coastal
+princess_hwy_centre,11.1,9,74,1973,2,Nicholson,Swan Reach,Coastal
+metung_rd,9.9,9,66,1760,2,Metung,Swan Reach,Coastal
+princess_hwy_east,16.2,16,60.75,1620,3,Swan Reach,Lakes Entrance,Coastal
+princess_hwy_north,1.9,2,57,1520,2,Bruthen,Kilmorie Swamp,Coastal
+princess_hwy_north_east,48.8,34,86.11764706,2296,5,Kilmorie Swamp,Lakes Entrance,Coastal
+tambo_upper_road_north,6.4,6,64,1706,3,Riversdale Farm,Kilmorie Swamp,Coastal
+tambo_upper_road_south,9.4,8,70.5,1880,3,Swan Reach,Riversdale Farm,Coastal
+stephenson_road_east,2.9,3,58,1546,3,Riversdale Farm,Tambo Upper,Coastal
+stephenson_road_west,7.1,6,71,1893,3,Tambo Upper,Nicholson,Coastal
+swan_reach_road_north,6.9,6,69,1840,3,Tambo Upper,Wiseleigh,Coastal
+swan_reach_road_south,7.3,5,87.6,2336,3,Swan Reach,Tambo Upper,Coastal
