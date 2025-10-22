@@ -10,14 +10,13 @@ while minimizing total cost and respecting road capacities.
 
 import pandas as pd
 import numpy as np
-import networkx as nx
 from scipy.optimize import linprog
 import matplotlib.pyplot as plt
 from typing import Dict, List, Tuple, Set
 from data_interface import DataInterface
 
 # Constants
-POPULATION_PER_CAR = 1.5 # Average number of people per vehicle
+POPULATION_PER_CAR = 1.0 # Average number of people per vehicle
 
 def getCost(node1: str, node2: str, data_interface: DataInterface) -> float:
     """
@@ -36,7 +35,8 @@ def getCost(node1: str, node2: str, data_interface: DataInterface) -> float:
     """
     risk = data_interface.get_property(node1, node2, 'road_risk')
     time = data_interface.get_property(node1, node2, 'road_time_minutes')
-    return risk * time
+    distance = data_interface.get_property(node1, node2, 'road_length')
+    return risk * (time + distance)
 
 
 def solve(data_interface):
@@ -142,6 +142,11 @@ def solve(data_interface):
                 print(f"  0 <= flow({edge[0]} → {edge[1]}) <= {ub:.1f}")
             elif i == 5:
                 print("  ...")
+
+        print("\nEdge Weights (Cost):")
+        for i, edge in enumerate(edges):
+            cost = c[i]  # Cost coefficient from objective function
+            print(f"  {edge[0]} → {edge[1]}: {cost:.1f}")
                 
         print(f"\nNetwork Statistics:")
         print(f"  Population nodes: {len(population_nodes)}")
@@ -210,14 +215,23 @@ def main():
             capacity_str = " (AT CAPACITY)" if at_capacity else ""
             print(f"  {edge[0]} → {edge[1]}: {flow:.1f} cars / {capacity:.1f} capacity{capacity_str}")
             
+        print(f"\nEdge Scores:")
+        for edge, flow in flows.items():
+            node1, node2 = edge
+            risk = data_interface.get_property(node1, node2, 'road_risk')
+            time = data_interface.get_property(node1, node2, 'road_time_minutes')
+            distance = data_interface.get_property(node1, node2, 'road_length')
+            score = risk * (time + distance) * flow
+            print(f"  {node1} → {node2}: {score:.1f}")
+
         print(f"\nFlow to Safe Zones (cars):")
         for safe_zone in result['safe_nodes']:
             total_inflow = sum(flows.get((node, safe_zone), 0) for node in data_interface.get_all_nodes())
             print(f"  {safe_zone}: {total_inflow:.1f} cars")
             
         # Import and call visualization
-        from visualise_optimisation import visualise_optimisation
-        visualise_optimisation(result)
+        from visualise_optimisation import visualise_all_three
+        visualise_all_three(result)
     else:
         print(f"Optimization failed: {result['message']}")
         
