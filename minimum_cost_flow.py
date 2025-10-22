@@ -17,6 +17,7 @@ from data_interface import DataInterface
 
 # Constants
 POPULATION_PER_CAR = 1.0 # Average number of people per vehicle
+EXISTING_TRAFFIC = 0.0 # Existing traffic as a fraction of the road capacity
 
 def getCost(node1: str, node2: str, data_interface: DataInterface) -> float:
     """
@@ -106,11 +107,13 @@ def solve(data_interface):
     A_eq.append(safe_constraint)
     b_eq.append(sum(node_supplies.get(node, 0) for node in population_nodes))
     
-    # Bounds: 0 <= flow <= capacity
+    # Bounds: 0 <= flow <= capacity (reduced by existing traffic)
     bounds = []
     for edge in edges:
         capacity = data_interface.get_property(edge[0], edge[1], 'road_flowrate')
-        bounds.append((0, capacity))
+        # Reduce capacity by existing traffic fraction
+        available_capacity = capacity * (1 - EXISTING_TRAFFIC)
+        bounds.append((0, available_capacity))
     
     # Solve
     A_eq = np.array(A_eq)
@@ -136,7 +139,8 @@ def solve(data_interface):
                 print(f"  Total flow to safe zones = {b:.1f} cars")
                 
         print("\nCapacity Bounds (lb <= x <= ub):")
-        print("  All flows >= 0")
+        print(f"  All flows >= 0")
+        print(f"  Available capacity reduced by {EXISTING_TRAFFIC*100:.0f}% for existing traffic")
         for i, ((lb, ub), edge) in enumerate(zip(bounds, edges)):
             if i < 5:  # Print first 5 bounds as example
                 print(f"  0 <= flow({edge[0]} → {edge[1]}) <= {ub:.1f}")
@@ -210,10 +214,11 @@ def main():
         
         for edge, flow in active_routes:
             # Get road capacity from data interface
-            capacity = data_interface.get_property(edge[0], edge[1], 'road_flowrate')
-            at_capacity = flow >= capacity * 0.99  # Allow for small numerical differences
+            full_capacity = data_interface.get_property(edge[0], edge[1], 'road_flowrate')
+            available_capacity = full_capacity * (1 - EXISTING_TRAFFIC)
+            at_capacity = flow >= available_capacity * 0.99  # Allow for small numerical differences
             capacity_str = " (AT CAPACITY)" if at_capacity else ""
-            print(f"  {edge[0]} → {edge[1]}: {flow:.1f} cars / {capacity:.1f} capacity{capacity_str}")
+            print(f"  {edge[0]} → {edge[1]}: {flow:.1f} cars / {available_capacity:.1f} available capacity (of {full_capacity:.1f} total){capacity_str}")
             
         print(f"\nEdge Scores:")
         for edge, flow in flows.items():
